@@ -1,0 +1,11 @@
+torch>=1.10.0
+transformers>=4.15.0
+streamlit>=1.10.0
+gradio>=3.0.0
+torchvision
+pandas
+yaml
+scikit-learn
+matplotlib
+opencv-python
+Pillow 

@@ -1,0 +1,14 @@
+# config.yaml
+
+datasets:
+  khatt: ../project/data/khatt/
+  ifn_enit: ../project/data/ifn_enit/
+  ahw: ../project/data/ahw/  # optional
+  custom: ../project/data/custom_data/
+
+hyperparameters:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 50
+  image_height: 32
+  image_width: 128 
