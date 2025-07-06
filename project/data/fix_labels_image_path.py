@@ -6,7 +6,8 @@ def fix_image_paths(labels_csv, output_csv=None):
     df = pd.read_csv(labels_csv)
     def fix_path(p):
         p = str(p)
-        return p if p.startswith('images/') else os.path.join('images', p)
+        return p if p.startswith('images/') else f'images/{p}'
+
     df['image_path'] = df['image_path'].apply(fix_path)
     if output_csv is None:
         output_csv = os.path.splitext(labels_csv)[0] + '_fixed.csv'
